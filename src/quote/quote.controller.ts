@@ -11,7 +11,7 @@ interface QuoteRequest {
 }
 class QuoteController {
   exchangeRateService: ExchangeRateService;
-  supportedCurrencies = ['USD', 'EUR', 'ILS', 'GBP'];
+  supportedCurrencies = process.env.SUPPORTED_CURRENCIES;
   router: express.Router;
 
   validate = (validations: ValidationChain[]) => {

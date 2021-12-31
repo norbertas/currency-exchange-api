@@ -17,7 +17,7 @@ Pino is used for logging.
 | quoteCurrency | String, 3 letters ISO currency code. Currency to convert to. |
 | baseAmount | Integer. The amount to convert in cents. Example: 100 (1 USD) |
 
-Supported currencies are USD, EUR, GBP and ILS. API calculates the total amount expected in the quoteCurrency accordingly to the exchange rate provided by the 3rd party service.
+API calculates the total amount expected in the quoteCurrency accordingly to the exchange rate provided by the 3rd party service.
 
 ### Response
 
@@ -60,6 +60,7 @@ Before running application run `npm install`.
 | PORT | Port for application to use | 3000 |
 | DEBUG_LOGS | Enables debug logging | false |
 | LRU_CACHE_SIZE | LRU Cache size for caching exchange rates | 2 |
-
+| LRU_CACHE_SIZE | LRU Cache size for caching exchange rates | 2 |
+| SUPPORTED_CURRENCIES | List of currencies to be supported |  |
 
 Environment variables are taken from the [.env](./.env) file using dotenv library.

@@ -5,6 +5,7 @@ declare global {
       DEBUG_LOGS: string;
       PORT?: string;
       LRU_CACHE_SIZE: number;
+      SUPPORTED_CURRENCIES: [string];
     }
   }
 }
